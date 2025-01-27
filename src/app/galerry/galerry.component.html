@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="shortcut icon" href="preview_cropped_image_600x300.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .gallery {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .gallery-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gallery-item:nth-child(even) {
+            flex-direction: row-reverse; /* Меняет местами фото и описание для четных элементов */
+        }
+
+        .photo {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo img:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            width: 48%;
+            color: #777;
+            font-size: 25px;
+        }
+
+        .description p {
+            line-height: 1.6;
+        }
+
+        .comment-section {
+            margin-top: 60px;
+            background-color: #fef8e4;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-section h2 {
+            color: #ffcc00;
+        }
+
+        .comment-section p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Наша Галерея</h1>
+        <div class="gallery">
+            <!-- Первый элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/preview_cropped_image_600x300.jpg" alt="Фото 1">
+                </div>
+                <div class="description">
+                    <p>Этот день я помню, и не хочу забывать его никогда, именно в этот день я понял что такое любить</p>
+                </div>
+            </div>
+
+            <!-- Второй элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827981_121.jpg" alt="Фото 2">
+                </div>
+                <div class="description">
+                    <p>Однажды, когда я спросил себя, что самое прекрасное на свете? - ты мне скинула это фото</p>
+                </div>
+            </div>
+
+            <!-- Третий элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827984_121.jpg" alt="Фото 3">
+                </div>
+                <div class="description">
+                    <p>Если бы твое имя было брендом, его бы логотипом была бы именно эта фотография</p>
+                </div>
+            </div>
+
+            <!-- Четвертый элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827985_121.jpg" alt="Фото 4">
+                </div>
+                <div class="description">
+                    <p>Что такое красота? - все бы сказали, нууу не знаю, когда светит солнце или когда снег лежит, а я бы сказал, красота - это когда я вижу тебя</p>
+                </div>
+            </div>
+
+            <!-- Пятый элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827986_121.jpg" alt="Фото 5">
+                </div>
+                <div class="description">
+                    <p>Смотрю на эту фотографию и вижу - что самое прекрасное досталось мне, а именно ты, твои глаза, твои волосы, твой запах и смех</p>
+                </div>
+            </div>
+
+            <!-- Шестой элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827987_121.jpg" alt="Фото 6">
+                </div>
+                <div class="description">
+                    <p>Никогда не думал что скажу это, но, самое красивое явление на земле это - когда ты улыбаешься</p>
+                </div>
+            </div>
+
+            <!-- Седьмой элемент -->
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827990_121.jpg" alt="Фото 7">
+                </div>
+                <div class="description">
+                    <p>В мире всего 7 чудес света а может и 8, я не помню, но точно знаю ты - это первое чудо света</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827991_121.jpg" alt="Фото 8">
+                </div>
+                <div class="description">
+                    <p>Есть Инь и Янь, а есть ты и я , и это - наш баланс</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300827995_121.jpg" alt="Фото 9">
+                </div>
+                <div class="description">
+                    <p>Можно было бы кончено сказать я тебя люблю, но я не люблю, я просто не могу жить без тебя</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300828002_121.jpg" alt="Фото 10">
+                </div>
+                <div class="description">
+                    <p>Как будто снова в первый класс, 2 сентября, помню этот день когда впервые я тебя провожал в школу)</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="photo">
+                    <img src="assets/photo/5219959293300828008_121.jpg" alt="Фото 11">
+                </div>
+                <div class="description">
+                    <p>Спросишь почему это фото самое последнее, потому что дессерт - последний на столе</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-section">
+        <h2>"Моё Признание Тебе в Твой День</h2>
+        <p>За всё это время я понял, что ближе человека, чем ты, у меня нет. Я не хочу терять такого человека, как ты, ведь ты показала мне, что такое на самом деле любовь, забота и поддержка. Бывали моменты, когда мы ссорились и мирились, но мы не сдаёмся, мы идём дальше и всегда помним о том, что любим друг друга.
+
+            Я хочу, чтобы ты знала, насколько сильно я тебя люблю и хочу быть с тобой всегда. Может быть, мы не идеальны, но мы идеальны друг для друга. Иногда мы не понимаем друг друга, злимся, ругаемся, но мы не уходим — мы миримся.
+            
+            Этот день — он твой. Тебе 18 лет. Ты уже взрослая девочка, и я очень горжусь тобой. Я хочу, чтобы твои мечты сбывались, планы не рушились, и ты всегда была счастлива. Прислушивайся к родителям, к друзьям, но всегда помни, что выбор за тобой.
+            
+            Прости меня за всё, и я хочу, чтобы ты была рядом со мной. Я тебя люблю. С Днём рождения!</p>
+    </div>
+</body>
+</html>

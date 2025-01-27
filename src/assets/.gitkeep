@@ -1,0 +1,2 @@
+<img src="assets/preview_cropped_image_600x300.jpg" alt="Happy Birthday">
+<a routerLink="/galerry">Нажми здесь, чтобы узнать больше!</a>
